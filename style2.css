@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+*
+{
+  font-family:sans-serif;
+  color: rgb(36, 0, 78);
+  /* font-family: 'Abril Fatface', cursive; */
+}
+body
+{
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background-image: url("D:/SVNIT/semester III/Mindbend 2022/registration form/bg.jpg");
+    /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+    /*background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+
+    background: radial-gradient(at 18% 99%, rgb(209, 175, 237) 0px, transparent 50%) repeat scroll 0% 0%, 
+            radial-gradient(at 97% 8%, rgb(224, 162, 225) 0px, transparent 50%) repeat scroll 0% 0%, 
+            radial-gradient(at 79% 82%, rgb(156, 157, 218) 0px, transparent 50%) repeat scroll 0% 0%,
+            radial-gradient(at 96% 10%, rgb(205, 145, 228) 0px, transparent 50%) repeat scroll 0% 0%,    
+            radial-gradient(at 42% 20%, rgb(139, 126, 170) 0px, transparent 50%) repeat scroll 0% 0%,
+            radial-gradient(at 4% 49%, rgb(188, 219, 236) 0px, transparent 50%) repeat scroll 0% 0%, rgb(129, 154, 160) radial-gradient(at 57% 33%, rgb(150, 104, 173) 0px, rgb(175, 153, 254) 50%) repeat scroll 0% 0%;
+}
+.registerbox
+{
+    max-width: 700px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px 30px;
+    border-radius: 15px;
+    /* border-style: solid; */
+    border-width: 5px;
+    border-color: black;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    height:max-content;
+    margin:20px;
+  }
+.registerbox .title{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+  }
+.registerbox .title::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 33vw;
+    border-radius: 15px;
+    top:35px;
+    /* background: linear-gradient(135deg, rgb(156, 157, 218), rgb(224,162,225)); */
+    /* background-color: white; */
+}
+.content form .user-details
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .field
+{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+.user-details .field input,select{
+  height: 35px;
+  /* width: 100%; */
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  /* padding: 5px; */
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  /* background: transparent; */
+  transition: all 0.3s ease;
+}
+.user-details .field input,select:focus,
+.user-details .field input,select:valid{
+  border-color: #9b59b6;
+}
+p
+{
+  font-size: small;
+  color:rgb(70, 128, 255);
+}
+#submit:hover
+{
+  background-color: antiquewhite;
+  transition-duration: 0.3s;
+}
+#divforref
+{
+  width:100vw;
+}
+#divforsubmit
+{
+  margin-left:25%;
+  text-align: center;
+}
+label 
+{
+  font-weight: 600;
+  margin-bottom:5px;
+}
+#name,#year,#college,#phone,#email,#password,#ref
+{
+  padding-left: 15px;
+}
+form #divforsubmit input{
+  height: 60%;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, rgb(156, 157, 218), rgb(224,162,225));
+}
+form #divforsubmit input:hover{
+ transform: scale(0.99);
+ background: linear-gradient(-135deg,rgb(156, 157, 218), rgb(224,162,225));
+ /* transition-delay: 1.5s; */
+ }
+@media(max-width: 584px)
+{
+  .registerbox
+  {
+    max-width: 100%;
+  }
+  form .user-details .field
+  {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .content form .user-details
+  {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar
+  {
+    width: 5px;
+  }
+}
+@media(max-width: 459px)
+{
+  .registerbox .content .category
+  {
+  flex-direction: column;
+  }
+}
+   
