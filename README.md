@@ -1,4 +1,4 @@
-# Campus-Ambassador-Portal
+
 #Campus Ambassador Portal
 This is a web application designed to manage Campus Ambassador programs. It includes a Login page, Registration Page, and a Dashboard for viewing current status.
 
